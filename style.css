@@ -59,9 +59,9 @@ body {
 }
 
 .icon {
-  width: 30px;
+  width: 28px;
+  height: 28px;
 }
-
 /* BUTTON */
 .card button {
   margin-top: 15px;
