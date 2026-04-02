@@ -50,3 +50,45 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+}
+
+/* BUTTON */
+.card button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* WHY SECTION */
+.why {
+  text-align: center;
+  padding: 30px;
+}
+
+.why ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
