@@ -1,8 +1,7 @@
 function bookService(service) {
-  const name = prompt("Enter your name:");
-  const location = prompt("Enter your location:");
+  const phone = "91XXXXXXXXXX"; // 👉 replace with your number
+  const message = `Hello, I need ${service} service in Rajahmundry/Kakinada`;
 
-  alert(`Booking Confirmed for ${service}\nName: ${name}\nLocation: ${location}`);
-
-  // Later we connect backend here
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
 }
