@@ -7,7 +7,6 @@
 <body>
 
 <header class="hero">
-
   <div class="logo-container">
     <img src="https://img.icons8.com/color/48/home.png" />
     <h1>GodavariHomeFix</h1>
@@ -19,42 +18,28 @@
     Book Service Now
   </button>
 
-  <p style="margin-top:10px;">📞 +91 7780178447</p>
-  <p style="font-size:14px;">🚀 Available Today | Quick Response within 30 mins</p>
-
+  <a href="tel:+917780178447" class="call-btn">📞 Call Now</a>
 </header>
 
 <section class="services">
 
   <div class="card">
-    <h3>
-      <img src="https://img.icons8.com/color/48/plumbing.png" class="icon">
-      Plumbing
-    </h3>
+    <h3><img src="https://img.icons8.com/color/48/plumbing.png" class="icon"> Plumbing</h3>
     <button onclick="bookService('Plumbing')">Book Service</button>
   </div>
 
   <div class="card">
-    <h3>
-      <img src="https://img.icons8.com/color/48/electrical.png" class="icon">
-      Electrical
-    </h3>
+    <h3><img src="https://img.icons8.com/color/48/electrical.png" class="icon"> Electrical</h3>
     <button onclick="bookService('Electrical')">Book Service</button>
   </div>
 
   <div class="card">
-    <h3>
-      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" class="icon">
-      Maid Service
-    </h3>
+    <h3><img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" class="icon"> Maid Service</h3>
     <button onclick="bookService('Maid Service')">Book Service</button>
   </div>
 
   <div class="card">
-    <h3>
-      <img src="https://img.icons8.com/color/48/maintenance.png" class="icon">
-      Appliance Repair
-    </h3>
+    <h3><img src="https://img.icons8.com/color/48/maintenance.png" class="icon"> Appliance Repair</h3>
     <button onclick="bookService('Appliance Repair')">Book Service</button>
   </div>
 
@@ -67,7 +52,7 @@
   <form onsubmit="submitForm(event)">
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="text" id="phone" placeholder="Phone Number" required>
-    <input type="text" id="location" placeholder="Location (Rajahmundry/Kakinada)" required>
+    <input type="text" id="location" placeholder="Location" required>
 
     <select id="service">
       <option>Plumbing</option>
@@ -80,22 +65,12 @@
   </form>
 </section>
 
-<section class="why">
-  <h2>Why Choose Us?</h2>
-  <ul>
-    <li>✔ Verified Local Professionals</li>
-    <li>✔ Fast Service</li>
-    <li>✔ Affordable Pricing</li>
-  </ul>
-</section>
-
 <footer>
   <p>© 2026 GodavariHomeFix</p>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/917780178447" class="whatsapp-float" target="_blank">
-  <img src="https://img.icons8.com/color/48/whatsapp.png" width="40"/>
+  💬
 </a>
 
 <script src="app.js"></script>
