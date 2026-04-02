@@ -3,17 +3,28 @@ function bookService(service) {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 }
 
-function submitForm(event) {
+async function submitForm(event) {
   event.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const location = document.getElementById("location").value;
-  const service = document.getElementById("service").value;
+  const data = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    location: document.getElementById("location").value,
+    service: document.getElementById("service").value
+  };
 
-  const message = `New Booking:%0AName: ${name}%0APhone: ${phone}%0ALocation: ${location}%0AService: ${service}`;
+  // Save to backend (local)
+  await fetch("http://localhost:5000/book", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
 
-  const whatsappURL = `https://wa.me/917780178447?text=${message}`;
+  // WhatsApp
+  const msg = `New Booking:%0A${data.name}%0A${data.phone}%0A${data.service}`;
+  window.open(`https://wa.me/917780178447?text=${msg}`);
 
-  window.open(whatsappURL, "_blank");
+  alert("Booking submitted!");
 }
