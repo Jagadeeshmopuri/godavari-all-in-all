@@ -79,3 +79,14 @@ footer {
   text-align: center;
   padding: 15px;
 }
+.icon {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
