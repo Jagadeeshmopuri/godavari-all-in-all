@@ -1,5 +1,5 @@
 function bookService(service) {
-  const phone = "91XXXXXXXXXX"; // 👉 replace with your number
+  const phone = "917780178447";
 
   const message = `Hello, I found GodavariHomeFix. I need ${service} service in Rajahmundry/Kakinada`;
 
