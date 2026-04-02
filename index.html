@@ -13,11 +13,14 @@
     <h1>GodavariHomeFix</h1>
   </div>
 
-  <p>Trusted Home Services in Rajahmundry & Kakinada</p>
+  <p>Serving Rajahmundry & Kakinada | Fast & Trusted Home Services</p>
 
   <button class="cta" onclick="bookService('General Service')">
     Book Service Now
   </button>
+
+  <p style="margin-top:10px;">📞 +91 7780178447</p>
+  <p style="font-size:14px;">🚀 Available Today | Quick Response within 30 mins</p>
 
 </header>
 
@@ -57,6 +60,26 @@
 
 </section>
 
+<!-- BOOKING FORM -->
+<section class="booking">
+  <h2>Book a Service</h2>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="location" placeholder="Location (Rajahmundry/Kakinada)" required>
+
+    <select id="service">
+      <option>Plumbing</option>
+      <option>Electrical</option>
+      <option>Maid Service</option>
+      <option>Appliance Repair</option>
+    </select>
+
+    <button type="submit">Submit Booking</button>
+  </form>
+</section>
+
 <section class="why">
   <h2>Why Choose Us?</h2>
   <ul>
@@ -70,9 +93,9 @@
   <p>© 2026 GodavariHomeFix</p>
 </footer>
 
-<!-- Floating WhatsApp Button -->
+<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/917780178447" class="whatsapp-float" target="_blank">
-  💬
+  <img src="https://img.icons8.com/color/48/whatsapp.png" width="40"/>
 </a>
 
 <script src="app.js"></script>
